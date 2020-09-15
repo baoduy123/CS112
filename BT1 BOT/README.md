@@ -14,18 +14,34 @@
 2. Pattern Recognition: Kadane’s Algorithm, Dynamic Programing
 3. Algorithm designed:
 ```
-Ban đầu gán tổng các dãy liền kề (ans): min(Mảng), tổng:= 0
-Duyệt vòng lặp i từ 0->n:
-		Tổng += phần từ Mảng thứ i
-		Nếu ans < tổng => {
-			ans := tổng
-			p:= i
+Input: 
+	n: int,(1<=n<=10^6)
+	array[n]: array (array[0], array[1], array[2], ..., array[n-1])
+	p: int
+	q: int
+Output: q: beginning index of the max sum continuous array
+	p: ending index of the max sum continuous array
+	ans: max sum of the max sum continuous array
+Temporary Initialization:
+	ans:= min(array) ,int
+	sum:= 0, int	
+
+def MaxSumConArray(n, array)
+	Loop for i from 0 to n-1 of the array:
+	(1)	sum = sum + array[i]
+
+	(2)	if (ans < sum) {
+	(2.1)		ans = sum
+	(2.2)		p = i
 		}
-		Nếu tổng < 0 => bỏ phần tử Mảng thứ i bằng cách gán lại tổng := 0 
-		Ngược lại tổng >0 => { 
-			q:= i
-			tổng giữ nguyên
-		}	
-		Quay về vòng lặp với i++
+		
+	(3.1)	if (sum < 0) {
+			sum = 0
+	(3.2)	} else {
+			q = i
+		}
+		
+	(4)	i = i+1
+	End loop
+	return p, q, ans
 ```
-Output: khoảng (q+1) đến (p+1) nếu p ‡ q, tổng dãy = ans
