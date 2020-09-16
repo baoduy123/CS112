@@ -17,31 +17,32 @@
 Input: 
 	n: int,(1<=n<=10^6)
 	array[n]: array (array[0], array[1], array[2], ..., array[n-1])
-	p: int
-	q: int
+	p:= 0,int
+	q:= 0,int
 Output: q: beginning index of the max sum continuous array
 	p: ending index of the max sum continuous array
 	ans: max sum of the max sum continuous array
 Temporary Initialization:
+	temp:= 0,int
 	ans:= min(array) ,int
 	sum:= 0, int	
 
 def MaxSumConArray(n, array)
 	Loop for i from 0 to n-1 of the array:
-	(1)	sum = sum + array[i]
-
+	(1)	if (sum < 0) {
+	(1.1)		temp = i
+	(1.2)		sum = array[i]
+		} else {
+	(1.3)		sum = sum + array[i]
+		}
+		
 	(2)	if (ans < sum) {
 	(2.1)		ans = sum
-	(2.2)		p = i
+	(2.2)		q = i
+	(2.3)		p = s
 		}
-		
-	(3.1)	if (sum < 0) {
-			sum = 0
-	(3.2)	} else {
-			q = i
-		}
-		
-	(4)	i = i+1
+	
+	(3)	i = i+1
 	End loop
 	return p, q, ans
 ```
