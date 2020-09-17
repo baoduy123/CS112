@@ -10,7 +10,7 @@
 +Trần Tuấn Vỹ - 18520406
 
 ----
-1. Abstraction: Tìm dãy các phần tử liên tiếp trong mảng sao cho có tổng lớn nhất.
+1. Abstraction: Find the maximum contiguous subarray
 2. Pattern Recognition: Kadane’s Algorithm, Dynamic Programing
 3. Algorithm designed:
 ```
@@ -42,7 +42,7 @@ def MaxSumConArray(n, array)
 	(2.3)		p = s
 		}
 	
-	(3)	i = i+1
+	(3)	i = i + 1
 	End loop
 	return p, q, ans
 ```
