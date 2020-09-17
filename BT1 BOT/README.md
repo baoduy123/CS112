@@ -15,17 +15,17 @@
 3. Algorithm designed:
 ```
 Input: 
-	n: int,(1<=n<=10^6)
+	n: int, (1<=n<=10^6)
 	array[n]: array (array[0], array[1], array[2], ..., array[n-1])
-	p:= 0,int
-	q:= 0,int
+	p:= 0, int
+	q:= 0, int
 Output: q: beginning index of the max sum continuous array
 	p: ending index of the max sum continuous array
 	ans: max sum of the max sum continuous array
 Temporary Initialization:
-	temp:= 0,int
-	ans:= min(array) ,int
-	sum:= 0, int	
+	temp:= 0, int, temporary best start for the contiguous array which has the best sum
+	ans:= min(array), int
+	sum:= 0, int, temporary sum for the the contiguous array
 
 def MaxSumConArray(n, array)
 	Loop for i from 0 to n-1 of the array:
