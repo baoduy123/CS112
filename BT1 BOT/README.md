@@ -16,7 +16,7 @@
 ```
 Input: 
 	n: int, (1<=n<=10^6)
-	array[n]: array (array[0], array[1], array[2], ..., array[n-1])
+	array: int, array (array[0], array[1], array[2], ..., array[n-1])
 	p:= 0, int
 	q:= 0, int
 Output: q: beginning index of the max sum continuous array
@@ -24,7 +24,7 @@ Output: q: beginning index of the max sum continuous array
 	ans: max sum of the max sum continuous array
 Temporary Initialization:
 	temp:= 0, int, temporary best start for the contiguous array which has the best sum
-	ans:= min(array), int
+	ans:= array[0], int
 	sum:= 0, int, temporary sum for the the contiguous array
 
 def MaxSumConArray(n, array)
