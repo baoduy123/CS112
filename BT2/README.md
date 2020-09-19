@@ -14,7 +14,7 @@
 
 ----
 1. Abstraction: Find an element in a *modified* Fibonacci sequence
-2. Pattern Recognition: Fibonacci sequence
+2. Pattern Recognition: Find an element in a Fibonacci sequence
 3. Algorithm design(s):
 ```
 Input:
