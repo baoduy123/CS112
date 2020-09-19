@@ -16,8 +16,8 @@
 1. Abstraction: Find the maximum contiguous subarray
 2. Pattern Recognition: Kadane’s Algorithm
 3. Algorithm design(s):
-```
 **Dynamic Programing**
+```
 Input:
 	n: int, number of elements of the array
 	array: int, array (array[0], array[1], array[2], ..., array[n-1])
