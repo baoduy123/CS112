@@ -13,14 +13,18 @@
 	- Trần Tuấn Vỹ - 18520406
 
 ----
-1. Abstraction: Fibonacci sequence
-2. Pattern Recognition: Dynamic Programing
+1. Abstraction: Find an element in a *modified* Fibonacci sequence
+2. Pattern Recognition: Fibonacci sequence
 3. Algorithm design(s):
 ```
-Input: 
+Input:
 	
 Output:
-	
-Temporary Initialization:
+
+Initialization:
+
+Temporary variable(s):
+
+Condition(s):
 
 ```
