@@ -19,7 +19,7 @@
 ```
 Input: 
 	
-Output: q: beginning index of the max sum continuous array
+Output:
 	
 Temporary Initialization:
 
