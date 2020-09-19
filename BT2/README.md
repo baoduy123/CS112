@@ -26,7 +26,7 @@ Output:
 Initialization:
 	arr: int, array (arr[0], arr[1],...), a unmodified and limited Fibonacci sequence
 Temporary variable(s):
-	temp: int, index of the required element in the unmodified* and limited Fibonacci sequence
+	temp: int, index of the required element in the unmodified and limited Fibonacci sequence
 Condition(s):
 	n: 1 <= n <= 1000
 	k: 1 <= k <= 10^18
