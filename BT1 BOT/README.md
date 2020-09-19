@@ -1,7 +1,9 @@
 # 💻 Phân tích và Thiết kế thuật toán CS112.L12.KHCL
-## BT1 "BOT":
+## Week 1 "BOT":
 
 ![](https://portal.uit.edu.vn/Styles/profi/images/logo186x150.png)
+
+- **Contributors**
 
 +Trần Minh Tiến - 18521492
 
@@ -12,7 +14,7 @@
 ----
 1. Abstraction: Find the maximum contiguous subarray
 2. Pattern Recognition: Kadane’s Algorithm, Dynamic Programing
-3. Algorithm designed:
+3. Algorithm design(s):
 ```
 Input: 
 	n: int, (1<=n<=10^6)
