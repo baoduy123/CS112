@@ -21,15 +21,15 @@ Input:
 	n: int, number of elements of the array
 	array: int, array (array[0], array[1], array[2], ..., array[n-1])
 Output:
-	q: int, beginning index of the max sum continuous array
-	p: int, ending index of the max sum continuous array
-	ans: int, max sum of the max sum continuous array
+	q: int, beginning index of the max sum contiguous array
+	p: int, ending index of the max sum contiguous array
+	ans: int, max sum of the max sum contiguous array
 Initialization:
-	p:= 0, int
 	q:= 0, int
+	p:= 0, int
 Temporary variable(s):
 	temp:= 0, int, temporary best start for the contiguous array which has the best sum
-	ans:= -inf, int
+	ans:= -inf, int, temporary best sum for the contiguous array
 	sum:= 0, int, temporary sum for the the contiguous array
 Condition(s):
 	n: 1 <= n <= 10^6
