@@ -13,7 +13,7 @@
 	- Trần Tuấn Vỹ - 18520406
 
 ----
-1. Abstraction:** Find the maximum contiguous subarray
+1. Abstraction: Find the maximum contiguous subarray
 2. Pattern Recognition: Kadane’s Algorithm, Dynamic Programing
 3. Algorithm design(s):
 ```
