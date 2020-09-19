@@ -26,7 +26,7 @@ Output: q: beginning index of the max sum continuous array
 	ans: max sum of the max sum continuous array
 Temporary Initialization:
 	temp:= 0, int, temporary best start for the contiguous array which has the best sum
-	ans:= array[0], int
+	ans:= -inf, int
 	sum:= 0, int, temporary sum for the the contiguous array
 
 def MaxSumConArray(n, array)
