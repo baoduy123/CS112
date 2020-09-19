@@ -17,7 +17,7 @@
 2. Pattern Recognition: Kadane’s Algorithm, Dynamic Programing
 3. Algorithm design(s):
 ```
-Input: 
+Input:
 	n: int, number of elements of the array
 	array: int, array (array[0], array[1], array[2], ..., array[n-1])
 Output:
