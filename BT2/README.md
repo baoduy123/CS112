@@ -24,7 +24,7 @@ Input:
 Output:
 	ans: int, the value of the element after k cycles or generations
 Initialization:
-	arr: int, array (arr[0], arr[1],...), a unmodified and limited Fibonacci sequence
+	arr: int, array (arr[0], arr[1],...), an unmodified and limited Fibonacci sequence
 Temporary variable(s):
 	temp: int, index of the required element in the unmodified and limited Fibonacci sequence
 Condition(s):
