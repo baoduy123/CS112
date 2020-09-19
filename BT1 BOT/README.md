@@ -35,23 +35,23 @@ Temporary variable(s):
 Condition(s):
 	n: 1 <= n <= 10^6
 	arr: 0 <= arr[i] <= 10^9, 0 <= i <= n-1
+Pseudocode:
+	def MaxSumConArray(n, array)
+		Loop for i from 0 to n-1 of the array:
+		(1)	if (sum < 0) {
+		(1.1)		temp = i
+		(1.2)		sum = array[i]
+			} else {
+		(1.3)		sum = sum + array[i]
+			}
 
-def MaxSumConArray(n, array)
-	Loop for i from 0 to n-1 of the array:
-	(1)	if (sum < 0) {
-	(1.1)		temp = i
-	(1.2)		sum = array[i]
-		} else {
-	(1.3)		sum = sum + array[i]
-		}
-		
-	(2)	if (ans < sum) {
-	(2.1)		ans = sum
-	(2.2)		q = i
-	(2.3)		p = s
-		}
-	
-	(3)	i = i + 1
-	End loop
-	return p, q, ans
+		(2)	if (ans < sum) {
+		(2.1)		ans = sum
+		(2.2)		q = i
+		(2.3)		p = s
+			}
+
+		(3)	i = i + 1
+		End loop
+		return p, q, ans
 ```
