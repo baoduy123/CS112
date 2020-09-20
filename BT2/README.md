@@ -30,11 +30,7 @@ Initialization:
 Condition(s):
 	n: 1 <= n <= 1000
 	k: 1 <= k <= 10^18
-<<<<<<< HEAD
 	mod: 1e9+7, modified number
-=======
-	temp: 1 <= temp <= 2 * k + 1
->>>>>>> parent of 59a3131... Update README.md
 Pseudocode:
 	function modified_Fibonacci(n, k) is
 		n1 := 1
