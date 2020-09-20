@@ -30,14 +30,14 @@ Temporary variable(s):
 Condition(s):
 	n: 1 <= n <= 1000
 	k: 1 <= k <= 10^18
-	temp: 1 <= temp <= 2 * k + 1
+	temp: 1 <= temp and temp = 2 * k + 1
 Pseudocode:
 	function modified_Fibonacci(n, k) is
 		temp := 2 * k + 1
 		initialize arr with temp + 1 elements
 		arr[0] := 0
 		arr[1] := 1
-		for i := 0 to temp:
+		for i := 2 to temp:
 			arr[i] = arr[i-1] + arr[i-2]
 		end loop
 		return n*arr[temp]
