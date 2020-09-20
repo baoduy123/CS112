@@ -30,7 +30,7 @@ Temporary variable(s):
 Condition(s):
 	n: 1 <= n <= 1000
 	k: 1 <= k <= 10^18
-	temp: 1 <= temp and temp = 2 * k + 1
+	temp: 1 <= temp <= 2 * k + 1
 Pseudocode:
 	function modified_Fibonacci(n, k) is
 		temp := 2 * k + 1
