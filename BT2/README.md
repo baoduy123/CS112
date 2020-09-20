@@ -13,7 +13,7 @@
 	- Trần Tuấn Vỹ - 18520406
 
 ----
-1. Abstraction: Find an element in a *modified* Fibonacci sequence
+1. Abstraction: Find an odd element in a *modified* Fibonacci sequence
 2. Pattern Recognition: Find an element in a Fibonacci sequence
 3. Algorithm design(s):
 - **Dynamic programming**
@@ -22,23 +22,30 @@ Input:
 	n: int, the value of the initial element
 	k: int, the number of cycles or generations
 Output:
-	ans: int, the value of the element after k cycles or generations
+	sum: int, the value of the element after k cycles or generations
 Initialization:
-	arr: int, array (arr[0], arr[1],...), an unmodified and limited Fibonacci sequence
-Temporary variable(s):
-	temp: int, index of the required element in the unmodified and limited Fibonacci sequence
+	n1 := 1, first number of Fibonacci
+	n2 := 1, second number of Fibonacci
+	sum := 0, the next number of Fibonacci
 Condition(s):
 	n: 1 <= n <= 1000
 	k: 1 <= k <= 10^18
-	temp: 1 <= temp and temp = 2 * k + 1
+	mod: 1e9+7, modified number
 Pseudocode:
 	function modified_Fibonacci(n, k) is
-		temp := 2 * k + 1
-		initialize arr with temp + 1 elements
-		arr[0] := 0
-		arr[1] := 1
-		for i := 0 to temp:
-			arr[i] = arr[i-1] + arr[i-2]
+		n1 := 1
+		n2 := 1
+		sum := 0
+		mod := (1e9+7)
+		
+		for i := 1 to 2*k+1:
+		if (i==1): 
+			sum = 1
+		else:
+			sum = n1+n2
+			n1 = n2
+			n2 = sum
 		end loop
-		return n*arr[temp]
+		
+		return (sum * n % mod)
 ```
