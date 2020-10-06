@@ -54,4 +54,5 @@ Pseudocode:
 		(3)	i = i + 1
 		End loop
 		return p, q, ans
+Time complexity: O(n) (going through the entire of the array once)
 ```
