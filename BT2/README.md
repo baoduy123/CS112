@@ -41,5 +41,5 @@ Pseudocode:
 			arr[i] = arr[i-1] + arr[i-2]
 		end loop
 		return n*arr[temp]
-Time complexity: O(k)
+Time complexity: O(k) (elements are generated (2k+1) times)
 ```
