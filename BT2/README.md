@@ -13,7 +13,7 @@
 	- Trần Tuấn Vỹ - 18520406
 
 ----
-1. Abstraction: Find the (2k+1) element in a Fibonacci sequence where k is the index/ position in the *modified* Fibonacci sequence
+1. Abstraction: Find the n(2k+1) element in a Fibonacci sequence where k is the index/ position in the *modified* Fibonacci sequence and n is the start element of the Fibonacci sequence
 2. Pattern Recognition: Find an element in a Fibonacci sequence
 3. Algorithm design(s):
 - **Dynamic programming**
