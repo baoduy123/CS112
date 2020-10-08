@@ -14,10 +14,9 @@
 
 ----
 1. Abstraction: Count the number of elements whose values are equal or higher than the number of elements in the array
-2. Pattern Recognition: 
+2. Pattern Recognition: Travel a list or an array
 3. Algorithm design(s):
 ```
-
 Input:
 	n: int, the number of elements in the array
 	arr: int, array, the array which contains the elements
@@ -38,5 +37,4 @@ Pseudocode:
 				h-index = length - i
 				break
 		return h-index
-
 ```
