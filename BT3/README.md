@@ -38,3 +38,4 @@ Pseudocode:
 				break
 		return h-index
 ```
+4. Time Complexity: O(n logn) for sorted + O(n) for one loop = O(n logn)
