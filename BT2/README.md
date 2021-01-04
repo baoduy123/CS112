@@ -21,10 +21,10 @@
  ![](https://hiringfor.tech/assets/images/posts/2020-10-26-my-resources-for-dynamic-programming.png)
 	 - As we can see, red nodes are unnecessarily travelled through, finding F(5) requires F(4) and F(3), F(4) requires F(2) and F(3), that is two times of F(3) in one recursion so that processing time and space would be exponentially increased.
 	 - To solve this problem, we implement dynamic programming solution on this particular case to remove abundant steps, the solution will be dynamic programming with bottom up method.
-	 - We simply store all the previous values in a array and calculate later values using solved ones.
-	 - For example, we know that in a Fibonacci sequence, F(0) = 0 F(1) = 1 and F(n) = F(n-1) + F(n-2) for n > 1 and n is the position of the value in the sequence so to minimize calculation, we store the values of F(n-1) and F(n-2) after every iteration then solve F(n), store F(n) then after another iteration F(n) becomes F(n-1), F(n-1) becomes F(n-2) and so on.
+	 - We simply store all the previous values in an array and calculate later values using solved ones.
+	 - For example, we know that in a Fibonacci sequence, F(0) = 0 F(1) = 1 and F(n) = F(n-1) + F(n-2) for n > 1 and n is the position of the value in the sequence. Therefore, to minimize calculation, we store the values of F(n-1) and F(n-2) after every iteration to solve F(n), store F(n) then after another iteration, F(n) becomes F(n-1), F(n-1) becomes F(n-2) and so on.
 	 ![](https://i.imgur.com/yThh6bR.png)
-	 - We don't have to call every 2 values every node we want to solve.
+	 - We don't have to call every 2 same values every node we want to solve.
 - **Dynamic programming**
 ```
 Input:
