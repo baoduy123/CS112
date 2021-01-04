@@ -16,10 +16,10 @@
 1. Abstraction: Find the n(2k+1) element in a Fibonacci sequence where k is the index/ position in the *modified* Fibonacci sequence and n is the start element of that *modified* Fibonacci sequence
 2. Pattern Recognition: Find an element in a Fibonacci sequence
 3. Algorithm design(s):
-**Approach 1:** Space optimized Fibonacci.
- - For example, plain recursion solution takes a lot of time and space, because it travels through unnecessary nodes in order to get to the destination node:
+ - **Approach 1:** Space optimized Fibonacci.
+	 - For example, plain recursion solution takes a lot of time and space, because it travels through unnecessary nodes in order to get to the destination node:
  ![](https://hiringfor.tech/assets/images/posts/2020-10-26-my-resources-for-dynamic-programming.png)
- - As we can see, red nodes are unnecessarily travelled through, finding F(5) requires F(4) and F(3), F(4) requires F(2) and F(3), that is two times of F(3) in one recursion so that processing time and space would be exponentially increased.
+	 - As we can see, red nodes are unnecessarily travelled through, finding F(5) requires F(4) and F(3), F(4) requires F(2) and F(3), that is two times of F(3) in one recursion so that processing time and space would be exponentially increased.
 - **Dynamic programming**
 ```
 Input:
