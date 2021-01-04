@@ -66,3 +66,22 @@ Time complexity: O(k) (elements are generated (2k+1) times)
  - **Approach 2:** Matrix for Fibonacci.
  	- Applying matrix to the problem:
 ![matrix](https://user-images.githubusercontent.com/56116908/103554877-2da07d00-4ee2-11eb-9687-4120b7c50875.png)
+```
+Input:
+	n: int, the value of the initial element
+	k: int, the number of cycles or generations
+Output:
+	ans: int, the value of the element after k cycles or generations
+Initialization:
+	arr: 2D int array, arr = [[1,1], [1,0]]
+Condition(s):
+	n: 1 <= n <= 1000
+	k: 1 <= k <= 10^18
+Pseudocode:
+	function matrix_exponentiation(arr, k):
+		return (exponentiate arr with 2*k+1) 
+	function modified_Fibonacci(n, k):
+		initialize arr = [[1,1], [1,0]]
+		return matrix_exponentiation(arr, k)[0][1]*n
+Time Complexity: O(2*k+1) = O(k)
+```
