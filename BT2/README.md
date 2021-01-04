@@ -20,6 +20,10 @@
 	 - For example, plain recursion solution takes a lot of time and space, because it travels through unnecessary nodes in order to get to the destination node:
  ![](https://hiringfor.tech/assets/images/posts/2020-10-26-my-resources-for-dynamic-programming.png)
 	 - As we can see, red nodes are unnecessarily travelled through, finding F(5) requires F(4) and F(3), F(4) requires F(2) and F(3), that is two times of F(3) in one recursion so that processing time and space would be exponentially increased.
+	 - To solve this problem, we implement dynamic programming solution on this particular case to remove abundant steps, the solution will be dynamic programming with bottom up method.
+ ![](https://i.imgur.com/yThh6bR.png)
+	 - We simply store all the previous values in a array and calculate later values using solved ones.
+	 - For example, {\displaystyle F_{0}=0,\quad F_{1}=1,} and {\displaystyle F_{n}=F_{n-1}+F_{n-2}}{\displaystyle F_{n}=F_{n-1}+F_{n-2}}
 - **Dynamic programming**
 ```
 Input:
