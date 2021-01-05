@@ -37,5 +37,5 @@ Pseudocode:
 				h-index = length - i
 				break
 		return h-index
+Time Complexity: O(n logn) for sorting + O(n) for one loop = O(n logn)
 ```
-4. Time Complexity: O(n logn) for sorted + O(n) for one loop = O(n logn)
